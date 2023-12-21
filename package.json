@@ -1,0 +1,48 @@
+{
+  "name": "dwarven",
+  "version": "1.0.0",
+  "description": "dwarven nft",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "truffle:build": "truffle compile",
+    "truffle:deploy": "truffle migrate --reset --compile-all",
+    "truffle:deploy:bsc": "truffle migrate --reset --compile-all --network bsc",
+    "truffle:deploy:eth": "truffle migrate --reset --compile-all --network ethereum",
+    "truffle:deploy:polygon": "truffle migrate --reset --compile-all --network polygon",
+    "truffle:deploy:rinkeby": "truffle migrate --reset --compile-all --network rinkeby",
+    "truffle:deploy:bsctest": "truffle migrate --reset --compile-all --network bscTestnet",
+    "truffle:deploy:mumbai": "truffle migrate --reset --compile-all --network mumbai",
+    "truffle:deploy:goerli": "truffle migrate --reset --compile-all --network goerli",
+    "truffle:deploy:sepolia": "truffle migrate --reset --compile-all --network sepolia"
+  },
+  "keywords": [],
+  "private": true,
+  "author": "Milan",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "4.7.3",
+    "@openzeppelin/contracts-upgradeable": "4.7.3",
+    "@truffle/environment": "^0.2.160",
+    "@truffle/hdwallet-provider": "^1.7.0",
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "dotenv": "^16.0.1",
+    "truffle": "^5.4.3",
+    "truffle-contract-size": "^2.0.1",
+    "truffle-flatten": "^1.0.8",
+    "truffle-privatekey-provider": "^1.5.0"
+  },
+  "devDependencies": {
+    "@openzeppelin/truffle-upgrades": "^1.17.0",
+    "@truffle/contract": "^4.6.2",
+    "@truffle/hdwallet-provider": "^1.7.0",
+    "truffle": "^5.11.5",
+    "truffle-plugin-verify": "^0.5.33",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
